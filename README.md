@@ -18,7 +18,7 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 
 ### Local Setup
 
-1. Install dependencies
+1. 安装环境依赖
 
    ```bash
    pip install -r requirements.txt
@@ -41,7 +41,7 @@ python finetune.py \
     --output_dir './lora-alpaca'
 ```
 
-We can also tweak our hyperparameters:
+我们可以调整超参数
 
 ```bash
 python finetune.py \
