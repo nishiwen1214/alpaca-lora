@@ -28,9 +28,7 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 
 ### Training (`finetune.py`)
 
-This file contains a straightforward application of PEFT to the LLaMA model,
-as well as some code related to prompt construction and tokenization.
-PRs adapting this code to support larger models are always welcome.
+直接微调alpaca-lora
 
 Example usage:
 
@@ -64,7 +62,7 @@ python finetune.py \
 
 ### Inference (`generate.py`)
 
-This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
+直接加载官方llama和alpaca-lora的权重，运行模型demo
 
 Example usage:
 
